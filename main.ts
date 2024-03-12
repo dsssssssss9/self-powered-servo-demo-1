@@ -11,8 +11,4 @@ modules.button2.onEvent(jacdac.ButtonEvent.Down, function () {
     ContinuousServo.spin_other_way_with_speed(AnalogPin.P2, modules.potentiometer1.position())
 })
 basic.showIcon(IconNames.Angry)
-let Speed = 0
 ContinuousServo.turn_off_motor(DigitalPin.P2)
-basic.forever(function () {
-	
-})
