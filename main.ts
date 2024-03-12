@@ -1,6 +1,6 @@
 modules.button1.onEvent(jacdac.ButtonEvent.Down, function () {
     basic.showString("1")
-    ContinuousServo.spin_one_way_with_speed(AnalogPin.P2, 25)
+    ContinuousServo.spin_one_way_with_speed(AnalogPin.P2, modules.potentiometer1.position())
 })
 input.onButtonPressed(Button.AB, function () {
     ContinuousServo.turn_off_motor(DigitalPin.P2)
@@ -8,7 +8,11 @@ input.onButtonPressed(Button.AB, function () {
 })
 modules.button2.onEvent(jacdac.ButtonEvent.Down, function () {
     basic.showString("2")
-    ContinuousServo.spin_other_way_with_speed(AnalogPin.P2, 99)
+    ContinuousServo.spin_other_way_with_speed(AnalogPin.P2, modules.potentiometer1.position())
 })
-basic.showIcon(IconNames.Square)
+basic.showIcon(IconNames.Angry)
+let Speed = 0
 ContinuousServo.turn_off_motor(DigitalPin.P2)
+basic.forever(function () {
+	
+})

@@ -7,7 +7,8 @@
         "microphone": "*",
         "ContinuousServo": "github:tinkertanker/pxt-continuous-servo#v0.0.6",
         "jacdac": "github:microsoft/pxt-jacdac#v1.9.25",
-        "jacdac-button": "github:microsoft/pxt-jacdac/button#v1.9.25"
+        "jacdac-button": "github:microsoft/pxt-jacdac/button#v1.9.25",
+        "jacdac-potentiometer": "github:microsoft/pxt-jacdac/potentiometer#v1.9.25"
     },
     "files": [
         "main.blocks",
